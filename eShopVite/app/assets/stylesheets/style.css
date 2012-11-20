@@ -1,0 +1,157 @@
+
+div#logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#footer_text a {
+  font-family: Arial,sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: normal;
+  color: #455C6C;
+  text-decoration: underline; white-space: nowrap;
+}
+
+    
+#key_visual {
+   background: url(http://www.eshopvite.com/resources/_wsb_keyvisual.jpg) no-repeat;
+}
+#slogan {
+  font-family: Arial,sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+a.main_nav_active_item {
+  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/n1active.gif) no-repeat;
+  font-family: Arial,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #3B4F7C;
+  background-position: top left;
+}
+a.main_nav_item {
+  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/n1.gif) no-repeat;
+  font-family: Arial,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #3B4F7C;
+  background-position: top left;
+}
+a.main_nav_item:hover {
+  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/n1hover.gif) no-repeat;
+  font-family: Arial,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #3B4F7C;
+  background-position: top left;
+}
+a.sub_nav_active_item {
+  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/sn1active.gif) no-repeat;
+  font-family: Arial,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #35382D;
+}
+a.sub_nav_item {
+  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/sn1.gif) no-repeat;
+  font-family: Arial,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #36761F;
+}
+a.sub_nav_item:hover {
+  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/sn1hover.gif) no-repeat;
+  font-family: Arial,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 11px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #35382D;
+}
+.content h1 {
+  font-family: Arial,Trebuchet MS,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #7A7A7A;
+}
+.content h2 {
+  font-family: Arial,Trebuchet MS,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #668C48;
+}
+.content h3 {
+  font-family: Arial,Trebuchet MS,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #974141;
+}
+.content, .content p {
+  font-family: Arial,Tahoma,Verdana, sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #4C5871;
+}
+.content a:link {
+  font-family: Arial,Trebuchet MS,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #36761F;
+}
+.content a:visited {
+  font-family: Arial,Trebuchet MS,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #525252;
+}
+.content a:hover {
+  font-family: Arial,Trebuchet MS,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: none;
+  color: #36761F;
+}
+.content a:active {
+  font-family: Arial,Trebuchet MS,Tahoma,Verdana,sans-serif;
+  font-style: normal;
+  font-size: 100%;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #36761F;
+}
+#footer_text {
+  font-family: Arial,sans-serif;
+  font-style: normal;
+  font-size: 10px;
+  font-weight: normal;
+  text-decoration: none;
+  color: #455C6C;
+}
+

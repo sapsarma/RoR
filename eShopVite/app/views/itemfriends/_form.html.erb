@@ -1,0 +1,42 @@
+<%= form_for(@itemfriend) do |f| %>
+  <% if @itemfriend.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@itemfriend.errors.count, "error") %> prohibited this itemfriend from being saved:</h2>
+
+      <ul>
+      <% @itemfriend.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+ <div class="field">
+    <%= f.label :emailid %><br />
+    <%= f.text_field  :emailid %>
+  </div>
+<%= f.hidden_field :Itemservice_id %>
+
+ <div class="field">
+    <%= f.label :interested %><br />
+    <%= f.check_box :interested %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :qty %><br />
+    <%= f.number_field :qty %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :comments %><br />
+    <%= f.text_area :comments %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

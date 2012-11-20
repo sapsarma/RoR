@@ -1,0 +1,25 @@
+
+
+  <%= @friendslist[1] %>
+
+  <%= @friendslist[2] %>
+ <%= @friendslist[3] %>
+<%= @friendslist[4] %>
+<%= @friendslist[5] %>
+<%= @friendslist[6] %>
+<%= @friendslist[7] %>
+<%= @friendslist[8] %>
+
+
+    <script src="http://connect.facebook.net/en_US/all.js"></script>
+    <div id="fb-root"></div>
+    <script>
+      // assume we are already logged in
+      FB.init({appId: '361676400593065', xfbml: true, cookie: true});
+
+      FB.ui({
+          method: 'send',
+          name: 'People Argue Just to Win',
+          link: 'http://www.nytimes.com/2011/06/15/arts/people-argue-just-to-win-scholars-assert.html',
+          });
+     </script>

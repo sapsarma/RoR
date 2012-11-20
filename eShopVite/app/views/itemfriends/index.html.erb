@@ -1,0 +1,31 @@
+<h1>Listing itemfriends</h1>
+
+<table>
+  <tr>
+    <th>Interested</th>
+    <th>Qty</th>
+    <th>Amount</th>
+    <th>Comments</th>
+    <th>Itemservice</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @itemfriends.each do |itemfriend| %>
+  <tr>
+    <td><%= itemfriend.interested %></td>
+    <td><%= itemfriend.qty %></td>
+    <td><%= itemfriend.amount %></td>
+    <td><%= itemfriend.comments %></td>
+    <td><%= itemfriend.Itemservice %></td>
+    <td><%= link_to 'Show', itemfriend %></td>
+    <td><%= link_to 'Edit', edit_itemfriend_path(itemfriend) %></td>
+    <td><%= link_to 'Destroy', itemfriend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Itemfriend', new_itemfriend_path %>

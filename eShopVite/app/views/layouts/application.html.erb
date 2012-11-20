@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EShopVite   Shop Together and Save </title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<body id="main_body">
+	<div id="container">
+		<div id="header">
+			<div id="slogan">Shop Together and Save Together - Power of Crowd</div>
+			<div id="key_visual">
+				<div id="logo"></div>
+			</div>
+			<div id="main_nav_container">
+				<ul id="main_nav_list">
+					<li><a class="main_nav_active_item" href="index.html" id="mnai1" shape="rect">Home</a></li>
+					<li><a class="main_nav_item" href="1.html" id="mni2" shape="rect">Shop together</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="main_container">
+			<table id="layout_table">
+				<tr>
+					<td colspan="1" id="sub_nav_column" rowspan="1">
+					<div
+							id="left_column_container">
+							<div id="sub_container1"></div>
+						</div>
+					</td>
+					<td colspan="1" id="content_column" rowspan="1"><div
+							id="sub_container2">
+							<div class="content" id="content_container">
+
+
+<%= yield %>
+
+<div id="user_nav">
+<% if current_user %>
+Logged in as <%= current_user.emailid %>.
+<%= link_to "Log out", log_out_path %>
+<% else %>
+<%= link_to "Sign up", sign_up_path %> or
+<%= link_to "log in", log_in_path %>
+<% end %>
+</div>
+
+<% flash.each do |name, msg| %>
+<%= content_tag :div, msg, :id => "flash_#{name}" %>
+<% end %>
+
+							</div>
+						</div></td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer">
+			<div id="footer_text">Shop together Save More</div>
+		</div>
+	</div>
+
+
+</body>
+</html>

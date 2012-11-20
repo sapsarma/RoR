@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Interested:</b>
+  <%= @itemfriend.interested %>
+</p>
+
+<p>
+  <b>Qty:</b>
+  <%= @itemfriend.qty %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @itemfriend.amount %>
+</p>
+
+<p>
+  <b>Comments:</b>
+  <%= @itemfriend.comments %>
+</p>
+
+<p>
+  <b>Itemservice:</b>
+  <%= @itemfriend.Itemservice %>
+</p>
+
+
+<%= link_to 'Edit', edit_itemfriend_path(@itemfriend) %> |
+<%= link_to 'Back', itemfriends_path %>

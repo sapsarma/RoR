@@ -1,0 +1,70 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Siteurl:</b>
+  <%= @itemservice.siteurl %>
+</p>
+
+<p>
+  <b>Itemdescription:</b>
+  <%= @itemservice.itemdescription %>
+</p>
+
+<p>
+  <b>Quantity:</b>
+  <%= @itemservice.quantity %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @itemservice.amount %>
+</p>
+
+<p>
+  <b>Begindate:</b>
+  <%= @itemservice.begindate %>
+</p>
+
+<p>
+  <b>Enddate:</b>
+  <%= @itemservice.enddate %>
+</p>
+
+<p>
+  <b>EmailIds:</b>
+  <%= @itemservice.emailids %>
+</p>
+
+<p>
+  <b>Email Message:</b>
+  <%= @itemservice.emailmessage %>
+</p>
+<table>
+  <tr>
+    <th>Interested</th>
+    <th>Qty</th>
+    <th>Amount</th>
+    <th>Comments</th>
+    <th>Itemservice</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @itemservice.Itemfriend.each do |itemfriend| %>
+  <tr>
+    <td><%= itemfriend.interested %></td>
+    <td><%= itemfriend.qty %></td>
+    <td><%= itemfriend.amount %></td>
+    <td><%= itemfriend.comments %></td>
+    <td><%= itemfriend.Itemservice %></td>
+    <td><%= link_to 'Show', itemfriend %></td>
+    <td><%= link_to 'Edit', edit_itemfriend_path(itemfriend) %></td>
+    <td><%= link_to 'Destroy', itemfriend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'Add Friends', new_itemfriend_path %> | 
+<%= link_to 'Edit', edit_itemservice_path(@itemservice) %> |
+<%= link_to 'Back', itemservices_path %>

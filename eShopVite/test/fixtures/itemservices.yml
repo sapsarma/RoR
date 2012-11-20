@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  siteurl: MyString
+  itemdescription: MyText
+  quantity: 1
+  amount: 1.5
+  begindate: 2012-11-08 10:25:20
+  enddate: 2012-11-08 10:25:20
+  friendslistid: 1
+  User: 
+
+two:
+  siteurl: MyString
+  itemdescription: MyText
+  quantity: 1
+  amount: 1.5
+  begindate: 2012-11-08 10:25:20
+  enddate: 2012-11-08 10:25:20
+  friendslistid: 1
+  User: 

@@ -1,0 +1,55 @@
+<%= form_for(@itemservice) do |f| %>
+  <% if @itemservice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@itemservice.errors.count, "error") %> prohibited this itemservice from being saved:</h2>
+
+      <ul>
+      <% @itemservice.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+<%= f.hidden_field :user_id, :value => session[:user_id] %>
+  <div class="field">
+    <%= f.label :siteurl %>
+    <%= f.text_field :siteurl %>
+  </div>
+  <div class="field">
+    <%= f.label :itemdescription %><br />
+    <%= f.text_area :itemdescription, :cols => 100, :rows => 5  %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %>
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %>
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :begindate %>
+    <%= f.datetime_select :begindate %>
+  </div>
+  <div class="field">
+    <%= f.label :enddate %>
+    <%= f.datetime_select :enddate %>
+  </div>
+
+  <div class="field">
+    <%= f.label :emailids %><br />
+    <%= f.text_area :emailids, :cols => 100, :rows => 5 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :emailmessage %><br />
+    <%= f.text_area :emailmessage,  :cols => 100, :rows => 10 %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+
+
+<% end %>
