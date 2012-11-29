@@ -11,7 +11,8 @@ AuthExample::Application.routes.draw do
  devise_scope :user do
   delete "/logout" => "devise/sessions#destroy"
 end
-
+  resources :linkedin
+  resources :linkedin#callback
   resources :friendslists
   devise_scope :user do
       get '/users/auth/:provider' => 'users/omniauth_callbacks#passthru'

@@ -1,10 +1,14 @@
 class ItemservicesController < ApplicationController
+
+before_filter :authenticate_user!
+
   # GET /itemservices
   # GET /itemservices.json
   def index
-     @current_user = User.find(session[:user_id]) 
-     @itemservices = @current_user.itemservice
-
+    if user_signed_in?
+     @current_user = User.find(current_user.id) 
+     @itemservices = @current_user.itemservices
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @itemservices }
@@ -14,8 +18,11 @@ class ItemservicesController < ApplicationController
   # GET /itemservices/1
   # GET /itemservices/1.json
   def show
-    @itemservice = Itemservice.find(params[:id])
-    @itemfriend = @itemservice.Itemfriend
+
+   if user_signed_in?
+      @itemservice = Itemservice.find(params[:id])
+      @itemfriend = @itemservice.Itemfriend
+   end 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @itemservice }
@@ -43,8 +50,8 @@ class ItemservicesController < ApplicationController
   # POST /itemservices.json
   def create
 
-   @current_user = User.find(session[:user_id])
-   @itemservices = @current_user.itemservice.new(params[:itemservice])
+   @current_user = User.find(current_user.id)
+   @itemservice = @current_user.itemservices.new(params[:itemservice])
 
     respond_to do |format|
      if @itemservice.save

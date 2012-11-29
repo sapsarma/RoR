@@ -1,21 +1,14 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
-
-require "omniauth-facebook"
-
 Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = "mailer@eshopvite.com"
-
-  config.omniauth :facebook, "361676400593065", "d89043313020b9d3c1d1c4b4678530c2", :strategy_class => OmniAuth::Strategies::Facebook, :permissions=>'friends_relationships' 
-
- # :authorize_params => { :display => 'popup' }
+  config.mailer_sender = "please-change-me-at-config-initializers-devise@example.com"
 
   # Configure the class responsible to send e-mails.
-   config.mailer = "Devise::Mailer"
-
+  # config.mailer = "Devise::Mailer"
+    config.omniauth :facebook, "361676400593065", "d89043313020b9d3c1d1c4b4678530c2", :strategy_class => OmniAuth::Strategies::Facebook, :permissions=>'friends_relationships'
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
   # :mongoid (bson_ext recommended) by default. Other ORMs may be
@@ -89,7 +82,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = "0bf13b5ae034a2622848bc6cca4617129d8bf7f35314b82f8cfc2286b74f31dcc4ab1303b0fe7c0c91796646d619060d982ef2ef4eabcca0243aff3831fdf0d5"
+  # config.pepper = "8372834c6f0a3205a92ed1ba6506e17c0b92e90d5a400df0d7d11aa18b201cf17762dd73f0a881460253573273205c57d999d21604bca6163cf733741ead5db4"
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without

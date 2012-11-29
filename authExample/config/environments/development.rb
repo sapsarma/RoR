@@ -39,7 +39,10 @@ config.action_mailer.raise_delivery_errors = true
 config.action_mailer.delivery_method = :smtp
 config.action_mailer.default_url_options = { :host => "localhost:3001" }
 
-
+LINKEDIN_CONFIGURATION = { :site => 'https://api.linkedin.com',
+:authorize_path => '/uas/oauth/authenticate',
+:request_token_path =>'/uas/oauth/requestToken?scope=r_fullprofile+r_emailaddress+r_network+r_contactinfo',
+:access_token_path => '/uas/oauth/accessToken' }
 
   # Expands the lines which load the assets
   config.assets.debug = true
