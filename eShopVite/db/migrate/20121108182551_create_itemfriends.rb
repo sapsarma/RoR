@@ -6,7 +6,8 @@ class CreateItemfriends < ActiveRecord::Migration
       t.float :amount
       t.text :comments
       t.references :Itemservice
-
+      t.string :emailid
+ 
       t.timestamps
     end
     add_index :itemfriends, :Itemservice_id
