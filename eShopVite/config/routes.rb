@@ -20,7 +20,7 @@ EShopVite::Application.routes.draw do
        resources :itemfriends
    end
 
- # match 'itemfriends/new/:itemservice_id'          => 'itemfriends#new'
-   match 'itemfriends/new/:itemservice_id/with_emaild/:emailid' => 'itemfriends#new'
+  match 'itemfriends/new/:itemservice_id'          => 'itemfriends#new'
+ #  match 'itemfriends/new/:itemservice_id/:emailid' => 'itemfriends#new'
 
 end

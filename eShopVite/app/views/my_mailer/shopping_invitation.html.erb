@@ -10,8 +10,7 @@
     </p>
     <p>
       To login to the site, just follow this link: <%= @url %>.
-    <%= link_to "Interest", :controller => "itemfriends", :action => "new",  :itemserivce_id => @itemservice.friendslistid, :emailid => @emailx %>
-    <%=  url_for(:only_path => false, :controller => "itemfriends", :action => "new",  :itemservice_id => @itemservice.friendslistid, :emailid => @emailx )  %>
+    <%=  link_to "Interest ",   url_for(:only_path => false, :controller => "itemfriends", :action => "new",  :itemservice_id => @itemservice.friendslistid, :emailid => @emailx )  %>
     </p>
     <p>Thanks for joining and have a great day!</p>
   </body>

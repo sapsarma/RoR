@@ -14,7 +14,8 @@
 
 <% @itemfriends.each do |itemfriend| %>
   <tr>
-    <td><%= itemfriend.interested %></td>
+    
+<td><%= if itemfriend.interested?   "Yes" else "No" end %></td>
     <td><%= itemfriend.qty %></td>
     <td><%= itemfriend.amount %></td>
     <td><%= itemfriend.comments %></td>

@@ -16,13 +16,11 @@
     <%= f.label :emailid %><br />
     <%= f.text_field  :emailid %>
   </div>
-<%= f.hidden_field :itemservice_id %>
 
  <div class="field">
-    <%= f.label :interested %><br />
+    <%= f.label :interested %>
     <%= f.check_box :interested %>
   </div>
-
 
   <div class="field">
     <%= f.label :qty %><br />
@@ -39,4 +37,5 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+<%= f.hidden_field :itemservice_id %>
 <% end %>
