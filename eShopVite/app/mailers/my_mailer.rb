@@ -3,8 +3,10 @@ class MyMailer < ActionMailer::Base
 
  def shopping_invitation(itemservices, emailx)
       @itemservice = itemservices
-      @url = "http://localhost:3000/itemfriends/new/#{@itemservice.friendslistid}?emailid=#{emailx}"
-    
+    #  @url = "http://localhost:3000/itemfriends/new/#{@itemservice.friendslistid}?emailid=#{emailx}"
+       @emailx = emailx    
+       @url = "/itemfriends/new/#{@itemservice.friendslistid}?emailid=#{emailx}"
+
       mail(:to => emailx, :subject => " ShopVite Invitation from  " )
 
     end

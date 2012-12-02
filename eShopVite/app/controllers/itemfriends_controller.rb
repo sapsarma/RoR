@@ -28,7 +28,7 @@ class ItemfriendsController < ApplicationController
     
     @itemservice = Itemservice.find(:first, :conditions => ["friendslistid = ?", (params[:itemservice_id])])
     @itemfriend.emailid = params[:emailid]
-    @itemfriend.Itemservice_id = @itemservice.id   
+    @itemfriend.itemservice_id = @itemservice.id   
 
 
     respond_to do |format|
