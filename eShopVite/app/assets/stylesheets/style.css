@@ -15,7 +15,7 @@ div#logo a {
 
     
 #key_visual {
-   background: url(http://www.eshopvite.com/resources/_wsb_keyvisual.jpg) no-repeat;
+   background: url(http://assets.eshopvite.com/resources/_wsb_keyvisual.jpg) no-repeat;
 }
 #slogan {
   font-family: Arial,sans-serif;
@@ -26,7 +26,7 @@ div#logo a {
   color: #ffffff;
 }
 a.main_nav_active_item {
-  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/n1active.gif) no-repeat;
+  background: url(http://assets.eshopvite.com/images/dynamic/buttonset1/n1active.gif) no-repeat;
   font-family: Arial,Tahoma,Verdana,sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -36,7 +36,7 @@ a.main_nav_active_item {
   background-position: top left;
 }
 a.main_nav_item {
-  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/n1.gif) no-repeat;
+  background: url(http://assets.eshopvite.com/images/dynamic/buttonset1/n1.gif) no-repeat;
   font-family: Arial,Tahoma,Verdana,sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -46,7 +46,7 @@ a.main_nav_item {
   background-position: top left;
 }
 a.main_nav_item:hover {
-  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/n1hover.gif) no-repeat;
+  background: url(http://assets.eshopvite.com/images/dynamic/buttonset1/n1hover.gif) no-repeat;
   font-family: Arial,Tahoma,Verdana,sans-serif;
   font-style: normal;
   font-size: 12px;
@@ -56,7 +56,7 @@ a.main_nav_item:hover {
   background-position: top left;
 }
 a.sub_nav_active_item {
-  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/sn1active.gif) no-repeat;
+  background: url(http://assets.eshopvite.com/images/dynamic/buttonset1/sn1active.gif) no-repeat;
   font-family: Arial,Tahoma,Verdana,sans-serif;
   font-style: normal;
   font-size: 11px;
@@ -65,7 +65,7 @@ a.sub_nav_active_item {
   color: #35382D;
 }
 a.sub_nav_item {
-  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/sn1.gif) no-repeat;
+  background: url(http://assets.eshopvite.com/images/dynamic/buttonset1/sn1.gif) no-repeat;
   font-family: Arial,Tahoma,Verdana,sans-serif;
   font-style: normal;
   font-size: 11px;
@@ -74,7 +74,7 @@ a.sub_nav_item {
   color: #36761F;
 }
 a.sub_nav_item:hover {
-  background: url(http://www.eshopvite.com/images/dynamic/buttonset1/sn1hover.gif) no-repeat;
+  background: url(http://assets.eshopvite.com/images/dynamic/buttonset1/sn1hover.gif) no-repeat;
   font-family: Arial,Tahoma,Verdana,sans-serif;
   font-style: normal;
   font-size: 11px;

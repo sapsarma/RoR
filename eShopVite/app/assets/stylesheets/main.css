@@ -1,21 +1,3 @@
-/*----------------------------------------------------------------------------
-	main.css
-
-	this css-file contains all definitions, that are independend from the
-	colorschemes.
-
-	(c) Schlund + Partner AG
-
-	This CSS-File uses the original "Tanteks Box Modell Hack"
-	http://www.tantek.com/CSS/Examples/boxmodelhack.html
-
-	NOTE:
-	Older W3C CSS validators return errors when the voice-family property
-	is used in a 'screen' style sheet. This is an error in the W3C CSS
-	validator itself. The validator should report a warning, not an error,
-	when properties which are unsupported by a particular medium are used,
-	and this has been reported to the W3C:
-
  ----------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------
