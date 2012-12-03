@@ -15,14 +15,14 @@
 
 #container {
     background: repeat-y;
-    background-image: url(http://www.eshopvite.com/colorschemes/colorscheme1/images/static/contentbg.gif);
+    background-image: url(http://assets.eshopvite.com/colorschemes/colorscheme1/images/static/contentbg.gif);
 }
 
 /*--- header ---------------------------------------------------------------*/
 
 #header {
     background: bottom no-repeat;
-    background-image: url(http://www.eshopvite.com/colorschemes/colorscheme1/images/static/headerbg.gif);
+    background-image: url(http://assets.eshopvite.com/colorschemes/colorscheme1/images/static/headerbg.gif);
 }
 
 /*--- key visiual ----------------------------------------------------------*/
@@ -40,13 +40,13 @@
 /*--- caption --------------------------------------------------------------*/
 
 #slogan {
-    background-image: url(http://www.eshopvite.com/colorschemes/colorscheme1/images/static/slogan_bg.gif);
+    background-image: url(http://assets.eshopvite.com/colorschemes/colorscheme1/images/static/slogan_bg.gif);
 }
 
 /*--- main navigation ------------------------------------------------------*/
 
 #main_nav_container {
-    background-image: url(http://www.eshopvite.com/colorschemes/colorscheme1/images/static/menubg.gif);
+    background-image: url(http://assets.eshopvite.com/colorschemes/colorscheme1/images/static/menubg.gif);
 }
 
 /*--- main navigation items ------------------------------------------------*/
@@ -93,7 +93,7 @@ a.sub_nav_active_item {
 
 #footer {
     background: transparent top left no-repeat;
-    background-image: url(http://www.eshopvite.com/colorschemes/colorscheme1/images/static/footerbg.gif);
+    background-image: url(http://assets.eshopvite.com/colorschemes/colorscheme1/images/static/footerbg.gif);
     background-color: #ffffff;
 }
 
@@ -104,7 +104,7 @@ a.sub_nav_active_item {
 /*--- body -----------------------------------------------------------------*/
 
 body#main_body {
-    background-image: url(http://www.eshopvite.com/colorschemes/colorscheme1/images/static/pagebg.gif);
+    background-image: url(http://assets.eshopvite.com/colorschemes/colorscheme1/images/static/pagebg.gif);
 }
 
 /*--- paragraph ------------------------------------------------------------*/
